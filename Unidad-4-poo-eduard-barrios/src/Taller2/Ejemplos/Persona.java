@@ -8,4 +8,5 @@ public class Persona {
     public void mostrarNombre() {
         System.out.println("Nombre: " + this.nombre); // Usamos `this` para referirnos al atributo
     }
+
 }
