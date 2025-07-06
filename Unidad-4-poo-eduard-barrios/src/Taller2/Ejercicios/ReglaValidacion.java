@@ -10,9 +10,9 @@ public class ReglaValidacion {
         this.numeroIntentos = numeroIntentos;
     }
 
-    //Método estático que intenta usar 'this' incorrectamente
-    public static void mostrarInfo() {
-        // La siguiente línea causa un error de compilación
+    //Método de instancia corregido (se quita 'static')
+    public void mostrarInfo() {
+        // Ahora 'this' es válido porque el método pertenece a una instancia
         System.out.println("Intentos: " + this.numeroIntentos);
     }
 }
